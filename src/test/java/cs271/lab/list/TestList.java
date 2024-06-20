@@ -83,7 +83,7 @@ public class TestList {
     assertEquals(5, list.lastIndexOf(77));
     assertEquals(44, list.get(2).intValue());
     assertEquals(77, list.get(3).intValue());
-    assertEquals(List.of(33, 77, 44), list);
+    assertEquals(List.of(33, 77, 44, 77, 55, 77, 66), list);
   }
 
   @Test
@@ -100,14 +100,14 @@ public class TestList {
     // TODO fix the expected values in the assertions below
     assertEquals(6, list.size());
     assertEquals(1, list.indexOf(77));
-    assertEquals(5, list.lastIndexOf(77));
+    assertEquals(3, list.lastIndexOf(77));
     assertEquals(4, list.get(2).intValue());
     assertEquals(77, list.get(3).intValue());
     list.remove(Integer.valueOf(5)); // what does this one do?
     // removes the value 5 the first time it occurs
     assertEquals(5, list.size());
     assertEquals(1, list.indexOf(77));
-    assertEquals(4, list.lastIndexOf(77));
+    assertEquals(3, list.lastIndexOf(77));
     assertEquals(4, list.get(2).intValue());
     assertEquals(77, list.get(3).intValue());
   }
